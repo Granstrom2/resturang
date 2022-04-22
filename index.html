@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/4b39a549d2.js "
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+    <header>
+      <nav id="myTopnav">
+        <div class="right">
+          <a href="#home" class="active"><b>rÅVAra</b></a>
+        </div>
+
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
+        <a href="#about">About</a>
+
         <a href="javascript:void(0);" class="icon" onclick="openNav()">
           <i class="fa fa-bars"></i>
         </a>
-      </div>
+      </nav>
 
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -34,11 +39,50 @@
           <a href="#">Contact</a>
         </div>
       </div>
-      <div style="padding-left: 16px">
-        <h2>Responsive Topnav Example</h2>
-        <p>Resize the browser window to see how it works.</p>
+
+      <div class="header-text">
+        <h1>rÅVAra</h1>
+        <p>Sveriges bästa restaurangskola.</p>
+        <button class="button">BOKA</button>
+        <button class="button">MENU</button>
       </div>
     </div>
+
+    <div class="content">
+      <h1>Östermalms enda mash-up av cocktailbar och aktiviteter</h1>
+      <p>
+        Tilt är Östermalms enda renodlade mix av högklassiga cocktails och
+        roliga aktiviteter. En social cocktailbar - eller ett andra vardagsrum -
+        där trevligt häng, goda drinkar och en bit mat kan avnjutas i
+        avslappnad, men sofistikerad miljö. Här satsar vi lika mycket på den
+        personliga atmosfären som på den höga nivån. Känn dig som hemma, spela
+        biljard, utmana varandra i shuffleboard, kasta dart eller slå dig ner i
+        en soffa med ditt favoritspel.
+      </p>
+      <button class="button-down">BOKA</button>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="left"></div>
+        <div class="rightt">
+          <h1>Sveriges bästa restaurangskola</h1>
+          <p>
+            Efter att den nya avdelningen på Åva Gymnasium byggdes 2017 så har
+            eleverna med ett sinne för matlagning och smak arbetat hårt för att
+            skapa den mest innovativa och kreativa matupplevesen som hedrar
+            tidigare generationers rätter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex-container">
+      <div class="flex-item-left">1</div>
+      <div class="flex-item-middel">2</div>
+      <div class="flex-item-right">3</div>
+    </div>
+
     <script src="scrpit.js"></script>
   </body>
 </html>

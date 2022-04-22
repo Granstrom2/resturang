@@ -1,65 +1,116 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #1b1425;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-.header {
-  background-image: url("david-marcu-78A265wPiO4-unsplash.jpg");
-
-  min-height: 500px;
-
+header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),  url("merlin_154816902_3392dddb-fc49-445f-a736-59164056fd78-superJumbo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 800px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
+.header-text {
   text-align: center;
-  padding: 14px 16px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-size: 40px;
+  padding: 0;
+  font-weight: bold;
+}
+.header-text h1 {
+  padding-top: 20px;
+  font-size: 200px;
+  margin: 0;
+}
+.button {
+  background-color: rgb(243, 54, 54);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
   text-decoration: none;
-  font-size: 17px;
+  display: inline-block;
+  margin: 6px 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 100px;
+  border-radius: 8px;
 }
 
-.topnav a:hover {
-  border-bottom: 3px solid red;
+.button:hover {
+  background-color: #ff0000;
+}
+.button:active {
+  background-color: #ff0000;
+  box-shadow: 0 2px 5px rgb(27, 27, 27);
+}
+@media screen and (max-width: 600px) {
+  .header {
+    min-height: 800px;
+  }
+  .header-text h1 {
+    padding-top: 150px;
+    font-size: 90px;
+  }
+  .button {
+    font-size: 16px;
+  }
+}
+nav {
+  overflow: hidden;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.topnav a.active {
-  border-bottom: 3px solid red;
+nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 27px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-.topnav .icon {
+.right {
+  float: left;
+}
+
+nav a.active {
+  font-size: 30px;
+}
+
+nav .icon {
   display: none;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  nav a:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  nav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
+  nav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  nav.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -117,3 +168,186 @@ body {
     right: 35px;
   }
 }
+
+.content {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  word-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 700px) {
+  .content {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .content p {
+    font-size: 25px;
+  }
+}
+
+.button-down {
+  background-color: #1b1425;
+  width: 50%;
+  border: none;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-down:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-down {
+    padding: 16px 48px;
+  }
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  width: 60%;
+  height: 500px;
+  background-image: url("gulddraken-740-x-494.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+.left:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.rightt {
+  width: 60%;
+  min-height: 250px;
+  background-color: rgb(36, 36, 36);
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-left: -150px;
+}
+
+.rightt {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.rightt h1 {
+  margin-bottom: 5px;
+}
+.rightt p {
+  padding-bottom: 10px;
+  word-spacing: 1px;
+}
+
+.rightt a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 3px;
+}
+
+@media screen and (max-width: 868px) {
+  .container {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .left {
+    width: 100%;
+  }
+  .rightt {
+    width: 75%;
+    margin-top: -100px;
+    margin-left: 0;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-image: url("merlin_154816902_3392dddb-fc49-445f-a736-59164056fd78-superJumbo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding: 10px;
+  flex: 50%;
+  margin: 10px;
+}
+.flex-item-middel {
+  background-image: url("gulddraken-740-x-494.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  flex: 50%;
+  margin: 10px;
+}
+
+.flex-item-right {
+  background-image: url("gulddraken-740-x-494.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  flex: 50%;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    height: 800px;
+  }
+}
+
+
