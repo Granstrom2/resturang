@@ -306,48 +306,14 @@ section {
   }
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
 }
-
-.flex-item-left {
-  background-image: url("merlin_154816902_3392dddb-fc49-445f-a736-59164056fd78-superJumbo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  padding: 10px;
-  flex: 50%;
-  margin: 10px;
-}
-.flex-item-middel {
-  background-image: url("gulddraken-740-x-494.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-  flex: 50%;
-  margin: 10px;
-}
-
-.flex-item-right {
-  background-image: url("gulddraken-740-x-494.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-  flex: 50%;
-  margin: 10px;
-}
-
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-    height: 800px;
-  }
-}
-
-
