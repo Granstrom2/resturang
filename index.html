@@ -1,69 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/4b39a549d2.js "
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
   </head>
   <body>
     <header>
-      <nav id="myTopnav">
-        <div class="right">
-          <a href="#home" class="active"><b>rÅVAra</b></a>
+      <div class="header_container center">
+        <nav id="myTopnav">
+          <div class="logo">
+            <a href="#home"> <img src="logo.jpg" /></a>
+          </div>
+
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#about">About</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
 
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#about">About</a>
+        <div class="home flex">
+          <div class="left">
+            <h1>rÅVAra</h1>
+            <p>
+              Efter att den nya avdelningen på Åva Gymnasium byggdes 2017 så har
+              eleverna med ett sinne för matlagning och smak arbetat hårt för
+              att skapa den mest innovativa och kreativa matupplevesen som
+              hedrar tidigare generationers rätter.
+            </p>
 
-        <a href="javascript:void(0);" class="icon" onclick="openNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
+            <button>BOKA</button>
+            <button>MENU</button>
+          </div>
 
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <div class="right">
+            <div class="img">
+              <img src="h.png" alt="" />
+            </div>
+            <div class="img2">
+              <img src="h3.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
+    </header>
 
-      <div class="header-text">
-        <h1>rÅVAra</h1>
-        <p>Sveriges bästa restaurangskola.</p>
-        <button class="button">BOKA</button>
-        <button class="button">MENU</button>
-      </div>
-    </div></header>
-    <section>
+    <section class="food_items center">
       <div class="container">
-        <div class="left"></div>
-        <div class="rightt">
-          <h1>Sveriges bästa restaurangskola</h1>
-          <p>
-            Efter att den nya avdelningen på Åva Gymnasium byggdes 2017 så har
-            eleverna med ett sinne för matlagning och smak arbetat hårt för att
-            skapa den mest innovativa och kreativa matupplevesen som hedrar
-            tidigare generationers rätter.
-          </p>
+        <div class="heading center">
+          <h2>Find your best food</h2>
         </div>
+
+        <div class="content grid">
+          <div class="box">
+            <img src="i1.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="box">
+            <img src="i2.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="box">
+            <img src="i3.png" alt="" />
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <button class="btn1">Read More</button>
       </div>
     </section>
 
-    <footer>
+    <section class="center">
+      <div class="container">
+        <div class="heading center">
+          <h2>The Restaurant</h2>
+        </div>
 
+        <section class="info">
+          <div class="info_container">
+            <div class="info_left"></div>
+            <div class="info_rightt">
+              <h1>Sveriges bästa restaurangskola</h1>
+              <p>
+                Efter att den nya avdelningen på Åva Gymnasium byggdes 2017 så
+                har eleverna med ett sinne för matlagning och smak arbetat hårt
+                för att skapa den mest innovativa och kreativa matupplevesen som
+                hedrar tidigare generationers rätter.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="containerrr">
+        <div class="roww">
+          <div class="footer-col">
+            <h4>rÅVAra</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>rÅVAra</h4>
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>rÅVAra</h4>
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="scrpit.js"></script>
